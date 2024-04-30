@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Basic drag and drop</title>
+</head>
+<body>
+    <p>Score: <text id="score001">0</text></p>
+
+    <div class="box002" ondrop="drop001(event)">
+        <text ondragstart="dragStart001(event)" draggable="true" id="target001">1</text>
+    </div>
+
+    <div class="box002" ondrop="drop002(event)">
+        <text ondragstart="dragStart002(event)" draggable="true" id="target002">2</text>
+    </div>
+
+    <div class="box002" ondrop="drop003(event)">
+        <text ondragstart="dragStart003(event)" draggable="true" id="target003">3</text>
+    </div>
+
+    <div class="box002" ondrop="drop004(event)">
+        <text ondragstart="dragStart004(event)" draggable="true" id="target004">4</text>
+    </div>
+
+    <div class="box002" ondrop="drop005(event)">
+        <text ondragstart="dragStart005(event)" draggable="true" id="target005">5</text></div>
+
+    </div>
+    <br /><br /><br /><br />
+
+    <div class="box001" ondrop="put001(event)" ondragover="allowDrop001(event)" id="place001">A</div>
+
+    <div class="box001" ondrop="put002(event)" ondragover="allowDrop002(event)" id="place002">B</div>
+
+    <div class="box001" ondrop="put003(event)" ondragover="allowDrop003(event)" id="place003">C</div>
+
+    <div class="box001" ondrop="put004(event)" ondragover="allowDrop004(event)" id="place004">D</div>
+
+    <div class="box001" ondrop="put005(event)" ondragover="allowDrop005(event)" id="place005">E</div>
+    <br /><br /><br /><br />
+    
+    <button onclick="submit001()">Submit</button>
+    <p id="message001"></p>
+<script src="/script.js"></script>
+</body>
+</html>
